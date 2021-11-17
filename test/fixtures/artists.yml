@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  category: 1
-  debut_year: 2021-11-12 11:43:10
+  name: Dream Theater
+  category: "band"
+  debut_year: 1985-1-1 11:43:10
 
 two:
-  name: MyString
-  category: 1
-  debut_year: 2021-11-12 11:43:10
+  name: Iron Maiden
+  category: "band"
+  debut_year: 1975-1-1 11:43:10
