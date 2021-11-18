@@ -1,0 +1,15 @@
+= form_with model: artist do |f|
+  div
+    = f.label :name
+    br
+    = f.text_field :name
+
+  div
+    = f.label :category
+    br
+    = f.select :category, ['band', 'duo', 'singer'], selected: 'band'
+
+  div
+    = f.label :debut_year
+    br
+    = f.date_select :debut_year
