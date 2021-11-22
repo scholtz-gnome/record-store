@@ -1,5 +1,13 @@
 = form_with model: artist do |f|
   div
+    - if artist.errors.any?
+      h2 #{pluralize(artist.errors.count, "error")} prohibited this artist from being saved
+
+      ul
+        - artist.errors.each do |error|
+          li #{error.full_message}
+
+  div
     = f.label :name
     br
     = f.text_field :name
@@ -12,4 +20,7 @@
   div
     = f.label :debut_year
     br
-    = f.date_select :debut_year
+    = f.date_select(:debut_year, { start_year: 1970, end_year: 2021, discard_day: true, discard_month: true })
+
+  div
+    = f.submit
