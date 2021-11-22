@@ -1,4 +1,6 @@
 class ArtistsController < ApplicationController
+  before_action :set_artist, only: %i[show]
+
   def index
     @artists = Artist.all()
   end
@@ -17,8 +19,16 @@ class ArtistsController < ApplicationController
     end
   end
 
+  def show
+    @artist
+  end
+
   private
     def artist_params
       params.require(:artist).permit(:name, :category, :debut_year)
+    end
+
+    def set_artist
+      @artist = Artist.find(params[:id])
     end
 end

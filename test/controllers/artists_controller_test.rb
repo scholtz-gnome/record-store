@@ -31,4 +31,9 @@ class ArtistsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to(artist_url(Artist.last))
   end
+
+  test 'should show artist' do
+    get(artist_url(@artist))
+    assert_response(:success)
+  end
 end

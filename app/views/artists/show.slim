@@ -1,0 +1,5 @@
+h1 #{@artist.name}
+h4 category: #{@artist.category}
+p First album released in #{@artist.debut_year.year()}
+
+= link_to 'all artists', artists_url()
