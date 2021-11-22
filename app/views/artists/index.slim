@@ -1,3 +1,9 @@
 h1 Artists
 
+- unless @artists.empty?
+ul
+  - @artists.each do |artist|
+    li
+      = link_to("#{artist.name}", artist_url(artist))
+
 = link_to 'Create Artist', new_artist_url()
