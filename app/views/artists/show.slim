@@ -3,3 +3,4 @@ h4 category: #{@artist.category}
 p First album released in #{@artist.debut_year.year()}
 
 = link_to 'all artists', artists_url()
+= link_to 'edit', edit_artist_url(@artist)

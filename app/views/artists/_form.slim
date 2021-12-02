@@ -15,7 +15,7 @@
   div
     = f.label :category
     br
-    = f.select :category, ['band', 'duo', 'singer'], selected: 'band'
+    = f.select :category, ['band', 'duo', 'singer'], selected: artist.category
 
   div
     = f.label :debut_year

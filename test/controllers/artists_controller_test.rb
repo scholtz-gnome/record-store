@@ -36,4 +36,21 @@ class ArtistsControllerTest < ActionDispatch::IntegrationTest
     get(artist_url(@artist))
     assert_response(:success)
   end
+
+  test 'should get edit' do
+    get(edit_artist_url(@artist))
+    assert_response(:success)
+  end
+
+  test 'should update artist' do
+    patch artist_url(@artist),
+          params: {
+            artist: {
+              name: 'Sonata Arctica',
+              category: @artist.category,
+              debut_year: @artist.debut_year
+            }
+          }
+    assert_redirected_to(artist_url(@artist))
+  end
 end
