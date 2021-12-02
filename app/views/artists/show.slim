@@ -4,3 +4,4 @@ p First album released in #{@artist.debut_year.year()}
 
 = link_to 'all artists', artists_url()
 = link_to 'edit', edit_artist_url(@artist)
+= link_to 'delete', @artist, method: :delete, data: { confirm: 'Are you sure?' }
