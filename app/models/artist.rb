@@ -1,4 +1,6 @@
 class Artist < ApplicationRecord
+  has_many(:albums, dependent: :destroy)
+
   include ValidatableEnum
 
   validates :name, presence: { message: 'Name cannot be empty' }, length: { maximum: 100, message: 'Name cannot exceed 100 characters' }
