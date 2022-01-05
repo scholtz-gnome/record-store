@@ -2,10 +2,10 @@
 
 one:
   name: Dream Theater
-  category: "band"
+  category: 'band'
   debut_year: 1985-1-1 11:43:10
 
 two:
   name: Iron Maiden
-  category: "band"
+  category: 'band'
   debut_year: 1975-1-1 11:43:10

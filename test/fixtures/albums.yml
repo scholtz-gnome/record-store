@@ -1,11 +1,9 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  title: MyString
-  release_date: 2022-01-05
-  genre: MyString
+  title: When Dream and Day Unite
+  release_date: 1985-01-01
+  genre: Progressive Metal
 
 two:
-  title: MyString
-  release_date: 2022-01-05
-  genre: MyString
+  title: Train of Thought
+  release_date: 2003-09-01
+  genre: Progressive Metal
